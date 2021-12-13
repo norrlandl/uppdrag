@@ -1,0 +1,284 @@
+/*
+iMac DESKTOP >1500px
+--------------------------
+BREDA DESKTOP 1500-1200px
+MINDRE DESKTOP 1200-960px
+TABLETS 960-768px
+MOBILE <768px
+ */
+
+/* 
+--------------------------
+ BREDA DESKTOP 1500-1200px
+ --------------------------
+ */
+
+@media (max-width: 1500px) {
+  /* MAIN WIDTH */
+  .uppdrag-container {
+    grid-template-columns: 1fr 1185px 1fr;
+  }
+
+  /* HEADER */
+  .uppdrag-header-container {
+    height: 640px;
+  }
+
+  .header-grey {
+    padding: 30px 30px;
+  }
+  .header-grey h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+  .header-grey p {
+    font-size: 14px;
+  }
+
+  /* UPPDRAG SECTION AND IMG */
+  .uppdrag section {
+    width: 321px;
+    height: 540px;
+  }
+  .uppdrag-item-img img {
+    height: 240px;
+  }
+
+  /* APP WIDTH */
+  .uppdrag-app-container {
+    grid-template-columns: 1fr 1200px 1fr;
+  }
+}
+
+/* 
+--------------------------
+ MINDRE DESKTOP 1200-960px
+ --------------------------
+ */
+
+@media (max-width: 1200px) {
+  /* MAIN WIDTH */
+  .uppdrag-container {
+    grid-template-columns: 1fr 940px 1fr;
+  }
+
+  .main-content-container {
+    grid-template-rows: 50px 80px auto;
+  }
+
+  /* HEADER */
+  .uppdrag-header-container {
+    height: 520px;
+  }
+
+  .header-grey {
+    padding: 20px 30px;
+  }
+  .header-grey h1 {
+    font-size: 25px;
+  }
+  .header-grey p {
+    font-size: 11px;
+  }
+
+  /* UPPDRAG SECTION AND IMG */
+  .uppdrag section {
+    width: 400px;
+  }
+
+  .uppdrag {
+    row-gap: 60px;
+  }
+
+  /* APP WIDTH */
+  .uppdrag-app-container {
+    grid-template-columns: 1fr 940px 1fr;
+  }
+
+  /* CONTACT */
+  .contact-container {
+    height: 500px;
+  }
+}
+
+/* 
+--------------------------
+ TABLETS 960-768px
+ --------------------------
+ */
+
+@media (max-width: 960px) {
+  /* MAIN WIDTH */
+
+  /* HEADER */
+  .uppdrag-header-container {
+    height: 520px;
+  }
+
+  .header-grey p {
+    font-size: 10px;
+  }
+
+  .circle {
+    height: 140px;
+    width: 140px;
+  }
+
+  /* UPPDRAG SECTION AND IMG */
+  .uppdrag section {
+    width: 800px;
+    height: 240px;
+  }
+
+  .uppdrag section:nth-child(6n) {
+    margin-bottom: 80px;
+  }
+
+  .uppdrag {
+    justify-content: center;
+    row-gap: 80px;
+  }
+
+  .uppdrag-item {
+    flex-direction: row;
+  }
+
+  .uppdrag-item-img {
+    flex-basis: 300px;
+  }
+
+  .uppdrag-item-text {
+    flex-basis: 450px;
+  }
+
+  /* APP WIDTH */
+
+  /* CONTACT */
+  .contact-container {
+    height: 400px;
+  }
+
+  .contact section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .contact section {
+    align-self: center;
+  }
+}
+
+/* 
+--------------------------
+ MOBILE <768px
+ --------------------------
+ */
+
+@media (max-width: 768px) {
+  /* MAIN WIDTH */
+  .uppdrag-container {
+    grid-template-columns: 1fr 740px 1fr;
+  }
+
+  /* HEADER */
+
+  .uppdrag-header-container {
+    height: 400px;
+  }
+
+  .header-grey {
+    grid-column: 2 / 26;
+    grid-row: 4 / 18;
+  }
+
+  .header-img {
+    visibility: hidden;
+  }
+
+  .circle {
+    visibility: hidden;
+  }
+
+  .header-grey {
+    padding: 23px 30px;
+  }
+  .header-grey h1 {
+    font-size: 40px;
+  }
+  .header-grey p {
+    font-size: 16px;
+  }
+
+  .circle {
+    height: 120px;
+    width: 120px;
+  }
+
+  /* UPPDRAG SECTION AND IMG */
+
+  .uppdrag {
+    justify-content: center;
+    row-gap: 120px;
+  }
+
+  .uppdrag section {
+    width: 650px;
+    height: 600px;
+  }
+
+  .uppdrag-item {
+    flex-direction: column;
+  }
+
+  .uppdrag-item-img {
+    flex-basis: 360px;
+  }
+
+  .uppdrag-item-img img {
+    height: 360px;
+  }
+
+  .uppdrag-item-text {
+    flex-basis: 200px;
+  }
+
+  .uppdrag-text {
+    height: 100px;
+  }
+
+  .uppdrag h2 {
+    font-size: 30px;
+  }
+
+  .uppdrag p {
+    font-size: 18px;
+  }
+
+  /* APP WIDTH */
+  .uppdrag-app-container {
+    grid-template-columns: 1fr 740px 1fr;
+  }
+
+  /* CONTACT */
+  .contact-container {
+    height: 400px;
+  }
+
+  .contact section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .contact p {
+    font-size: 13px;
+  }
+
+  .contact section {
+    align-self: center;
+  }
+
+  /* NAV */
+  .uppdrag-nav {
+    font-size: 25px;
+  }
+}

@@ -1,10 +1,8 @@
 .uppdrag-container {
-  /* background-color: rgb(210, 105, 30, 0.4); */
   margin: auto;
 
   display: grid;
   grid-template-columns: 1fr 1500px 1fr;
-  /* grid-template-rows: 800px auto; */
 }
 
 * {
@@ -12,22 +10,21 @@
 }
 
 .padding {
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 /* HEADER  */
 
 .uppdrag-header-container {
-  /* background-color: rgb(210, 105, 30); */
   grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  /* grid-row: 1 / 2; */
   height: 800px;
 }
 
 .uppdrag-header-content {
   display: grid;
   grid-template-columns: repeat(26, 1fr);
-  grid-template-rows: repeat(20, 40px);
+  grid-template-rows: repeat(20, 1fr);
   height: 100%;
 }
 
@@ -42,6 +39,8 @@
 
 .header-img img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .header-grey {
@@ -50,13 +49,18 @@
   background-color: #f4f4f4;
   z-index: 3;
 
-  padding: 40px;
+  padding: 40px 30px;
 }
 
 .header-grey h1 {
   font-size: 50px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.header-grey p {
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .header-blue {
@@ -129,8 +133,8 @@
 .uppdrag section {
   height: 600px;
   flex-grow: 0;
-  width: 443px;
-  /* border: 1px solid grey; */
+  /* width: 443px; */
+  width: 426px;
 }
 
 .uppdrag-webb {
@@ -157,11 +161,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-.uppdrag-item-img {
-  /* background-color: lightseagreen; */
-  flex-basis: 290px;
 }
 
 .uppdrag-item-img img {
@@ -241,49 +240,3 @@
 .contact-button button:hover {
   background-color: #74d6c9;
 }
-
-/* MEDIA QUERIES */
-
-/* @media screen and (max-width: 1600px) {
-    .uppdrag-container {
-      background-color: lightgreen;
-      grid-template-columns: 1fr 1100px 1fr;
-    }
-
-    .uppdrag-app-container {
-      grid-template-columns: 1fr 1100px 1fr;
-    }
-
-    .header-grey {
-      grid-row: 6 / 16;
-    }
-
-    .uppdrag section {
-      height: 500px;
-      flex-grow: 0;
-      width: 1000px;
-      border: 1px solid grey;
-    }
-
-
-
-    @media screen and (max-width: 1200px) {
-      .uppdrag-container {
-        background-color: lightgreen;
-        grid-template-columns: 1fr 900px 1fr;
-      }
-  
-
-
-    @media screen and (max-width: 960px) {
-      .uppdrag-container {
-        background-color: lightseagreen;
-        grid-template-columns: 1fr 800px 1fr;
-      }
-
-
-      @media screen and (max-width: 768px) {
-        .uppdrag-container {
-          background-color: lightseagreen;
-          grid-template-columns: 1fr 600px 1fr;
-        } */
