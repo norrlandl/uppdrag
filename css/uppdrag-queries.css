@@ -136,6 +136,10 @@ MOBILE <768px
     height: 300px;
   }
 
+  .uppdrag section {
+    margin-bottom: 35px;
+  }
+
   .uppdrag section:nth-child(6n) {
     margin-bottom: 35px;
   }
