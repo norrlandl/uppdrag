@@ -16,7 +16,7 @@ MOBILE <768px
 @media (max-width: 1500px) {
   /* MAIN WIDTH */
   .uppdrag-container {
-    grid-template-columns: 1fr 1185px 1fr;
+    grid-template-columns: 1fr 95% 1fr;
   }
 
   /* HEADER */
@@ -36,17 +36,14 @@ MOBILE <768px
   }
 
   /* UPPDRAG SECTION AND IMG */
-  .uppdrag section {
-    width: 321px;
-    height: 540px;
-  }
+
   .uppdrag-item-img img {
-    height: 240px;
+    height: 250px;
   }
 
   /* APP WIDTH */
   .uppdrag-app-container {
-    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-columns: 1fr 95% 1fr;
   }
 }
 
@@ -58,9 +55,6 @@ MOBILE <768px
 
 @media (max-width: 1200px) {
   /* MAIN WIDTH */
-  .uppdrag-container {
-    grid-template-columns: 1fr 940px 1fr;
-  }
 
   .main-content-container {
     grid-template-rows: 50px 80px auto;
@@ -71,28 +65,40 @@ MOBILE <768px
     height: 520px;
   }
 
-  .header-grey {
-    padding: 20px 30px;
-  }
   .header-grey h1 {
-    font-size: 25px;
+    font-size: 30px;
   }
   .header-grey p {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   /* UPPDRAG SECTION AND IMG */
-  .uppdrag section {
-    width: 400px;
-  }
 
   .uppdrag {
-    row-gap: 60px;
+    row-gap: 100px;
   }
 
-  /* APP WIDTH */
+  .uppdrag section {
+    width: 48%;
+  }
+  .uppdrag-item section {
+    width: 100%;
+  }
+  .uppdrag-item-img img {
+    height: 300px;
+  }
+
+  .uppdrag-item-text h2 {
+    font-size: 30px;
+  }
+
+  .uppdrag-item-text p {
+    font-size: 16px;
+  }
+
+  /* APP  */
   .uppdrag-app-container {
-    grid-template-columns: 1fr 940px 1fr;
+    margin-top: 50px;
   }
 
   /* CONTACT */
@@ -116,7 +122,7 @@ MOBILE <768px
   }
 
   .header-grey p {
-    font-size: 10px;
+    font-size: 11px;
   }
 
   .circle {
@@ -126,29 +132,33 @@ MOBILE <768px
 
   /* UPPDRAG SECTION AND IMG */
   .uppdrag section {
-    width: 800px;
-    height: 240px;
+    width: 100%;
+    height: 300px;
   }
 
   .uppdrag section:nth-child(6n) {
-    margin-bottom: 80px;
+    margin-bottom: 35px;
   }
 
   .uppdrag {
-    justify-content: center;
-    row-gap: 80px;
+    justify-content: flex-start;
   }
 
   .uppdrag-item {
     flex-direction: row;
   }
 
-  .uppdrag-item-img {
-    flex-basis: 300px;
+  .uppdrag-item-img img {
+    object-fit: cover;
   }
 
   .uppdrag-item-text {
-    flex-basis: 450px;
+    margin-left: 30px;
+  }
+
+  .uppdrag-item-text {
+    padding-top: 10px;
+    margin-top: 0;
   }
 
   /* APP WIDTH */
@@ -176,9 +186,6 @@ MOBILE <768px
 
 @media (max-width: 768px) {
   /* MAIN WIDTH */
-  .uppdrag-container {
-    grid-template-columns: 1fr 740px 1fr;
-  }
 
   /* HEADER */
 
@@ -188,7 +195,7 @@ MOBILE <768px
 
   .header-grey {
     grid-column: 2 / 26;
-    grid-row: 4 / 18;
+    grid-row: 4 / 17;
   }
 
   .header-img {
@@ -209,11 +216,6 @@ MOBILE <768px
     font-size: 16px;
   }
 
-  .circle {
-    height: 120px;
-    width: 120px;
-  }
-
   /* UPPDRAG SECTION AND IMG */
 
   .uppdrag {
@@ -222,7 +224,6 @@ MOBILE <768px
   }
 
   .uppdrag section {
-    width: 650px;
     height: 600px;
   }
 
@@ -230,20 +231,8 @@ MOBILE <768px
     flex-direction: column;
   }
 
-  .uppdrag-item-img {
-    flex-basis: 360px;
-  }
-
   .uppdrag-item-img img {
     height: 360px;
-  }
-
-  .uppdrag-item-text {
-    flex-basis: 200px;
-  }
-
-  .uppdrag-text {
-    height: 100px;
   }
 
   .uppdrag h2 {
@@ -254,10 +243,16 @@ MOBILE <768px
     font-size: 18px;
   }
 
-  /* APP WIDTH */
-  .uppdrag-app-container {
-    grid-template-columns: 1fr 740px 1fr;
+  .uppdrag-item-text {
+    padding: 20px 30px 0 30px;
+    margin-left: 0;
   }
+
+  .uppdrag section:nth-child(6n) {
+    margin-bottom: 12px;
+  }
+
+  /* APP WIDTH */
 
   /* CONTACT */
   .contact-container {
@@ -281,4 +276,4 @@ MOBILE <768px
   .uppdrag-nav {
     font-size: 25px;
   }
-}
+
